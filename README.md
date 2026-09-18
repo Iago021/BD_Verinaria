@@ -18,8 +18,6 @@ Para facilitar a compreensão da estrutura lógica do sistema, abaixo estão rep
 
 Este diagrama ilustra como as entidades interagem entre si na lógica de negócios da clínica, destacando como um Agendamento evolui para um Atendimento, ramificando-se em Exames, Prescrições, Vacinas e faturamento (Cobrança).
 
-> *Para melhor resolução, consulte o PDF: [Modelo Conceitual (PDF)](./downloads/Modelo_Conceitual_Veterinaria.pdf)*
-
 ```mermaid
 erDiagram
     Responsavel ||--o{ Animal : "Possui"
@@ -44,8 +42,6 @@ erDiagram
 ### Modelo Relacional (Tabelas)
 
 Abaixo, a representação visual das tabelas criadas no banco de dados e suas ligações estruturais.
-
-> *Para a tabela completa com tipos de dados, consulte o PDF: [Modelo Relacional (PDF)](./downloads/Modelo_Relacional_Veterinaria.pdf)*
 
 ```mermaid
 erDiagram
