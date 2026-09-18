@@ -1,22 +1,7 @@
 # Sistema de Gestão Veterinária 
 
-Bem-vindo ao repositório do **Sistema de Gestão Veterinária**. Esta é uma aplicação web completa, desenvolvida em PHP (utilizando o padrão arquitetural MVC + DAO), projetada para facilitar o controle de todas as rotinas diárias de uma clínica veterinária.
-
----
-
-##  Visão Geral
-
-A plataforma permite que clínicas gerenciem desde os cadastros básicos (tutores, pacientes e profissionais) até o fluxo completo do atendimento clínico. Ao longo do processo, o sistema integra o acompanhamento médico com a gestão financeira, garantindo que todo serviço prestado gere suas respectivas cobranças.
-
----
-
-##  Modelagem do Banco de Dados
-
-Para facilitar a compreensão da estrutura lógica do sistema, abaixo estão representados os modelos de dados.
-
 ### Modelo Conceitual (Diagrama de Entidade-Relacionamento)
 
-Este diagrama ilustra como as entidades interagem entre si na lógica de negócios da clínica, destacando como um Agendamento evolui para um Atendimento, ramificando-se em Exames, Prescrições, Vacinas e faturamento (Cobrança).
 
 ```mermaid
 erDiagram
@@ -41,7 +26,7 @@ erDiagram
 
 ### Modelo Relacional (Tabelas)
 
-Abaixo, a representação visual das tabelas criadas no banco de dados e suas ligações estruturais.
+Representação visual das tabelas criadas no banco de dados e suas ligações estruturais.
 
 ```mermaid
 erDiagram
