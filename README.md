@@ -2,6 +2,7 @@
 
 ### Modelo Conceitual (Diagrama de Entidade-Relacionamento)
 
+Este diagrama ilustra o fluxo de atendimento da clínica.
 
 ```mermaid
 erDiagram
