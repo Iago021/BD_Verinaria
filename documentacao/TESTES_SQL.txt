@@ -1,0 +1,20 @@
+T01 Animal sem responsável	PASSOU	45000 Responsável ativo obrigatório
+T02 Horários sobrepostos	PASSOU	45000 Conflito de horário do veterinário ou animal
+T03 Resultado de exame não solicitado	PASSOU	45000 Resultado exige solicitação com coleta anterior
+T04 Vacina sem lote	PASSOU	45000 Lote inválido, vencido, espécie incompatível ou data anterior ao atendimento
+T05 Preço negativo	PASSOU	23000 CONSTRAINT `CONSTRAINT_1` failed for `vetdata_pw_test`.`servico`
+T06 Desconto acima de 30%	PASSOU	23000 CONSTRAINT `CONSTRAINT_1` failed for `vetdata_pw_test`.`cobranca`
+T07 Exclusão de evolução clínica	PASSOU	45000 Histórico imutável; acrescente novo registro ou estorno
+T08 Responsável inativo com animais	PASSOU	45000 Transfira todos os animais antes de inativar o responsável
+T09 Pagamento maior que o saldo	PASSOU	45000 Cobrança inexistente, cancelada ou pagamento acima do saldo
+T10 ROLLBACK da operação composta	PASSOU	Contagem de responsáveis restaurada; contato desfeito
+T11 COMMIT da operação composta	PASSOU	Responsável e contato confirmados juntos
+T12 Cancelamento mantém cobrança e estorna	PASSOU	Atendimento 57: auditoria, fatura e pagamento preservados; estorno integral
+T13 Histórico e retificação preservados	PASSOU	Animal 1: duas consultas, original e retificação consultáveis
+T14 Conciliação dos indicadores	PASSOU	Soma das categorias = soma de cobranças líquidas
+T15 Agenda sem sobreposição	PASSOU	Intervalos adjacentes são permitidos; sobrepostos não
+T16 Dados para vacinação pendente	PASSOU	Há doses vencidas/próximas; doses antigas substituídas não duplicam alerta
+T17 Integridade referencial do tipo de exame	PASSOU	23000 Cannot add or update a child row: a foreign key constraint fails (`vetdata_pw_test`.`exame_solicitacao`, CONSTRAINT `exame_solicitacao_ibfk_2` FOREIGN KEY (`tipo_exame_id`) REFERENCES `tipo_exame` (`id`))
+T18 Aplicação de lote vencido	PASSOU	45000 Lote inválido, vencido, espécie incompatível ou data anterior ao atendimento
+total_testes	passaram	falharam
+18	18	0

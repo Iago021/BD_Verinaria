@@ -1,0 +1,13 @@
+PHP 8.3.6 / MariaDB 10.11.14 — validação da adaptação PW, 17/09/2026
+
+Importação completa em banco isolado: OK; 18 testes SQL incluídos executados.
+Dez telas e todos os formulários: caminhos e renderização HTTP OK.
+Filtros, rotas inválidas, registros ausentes e recursos locais: OK.
+Responsáveis e pacientes: inclusão, edição, contatos, arquivamento e reativação OK.
+Equipe e agenda: cadastro, disponibilidade, agendar, conflito, remarcar, confirmar e cancelar OK.
+Evolução, prescrição, conclusão, serviço, cobrança e pagamento parcial: OK; excesso recusado.
+Solicitação, coleta, laudo e aplicação de vacina: OK.
+CSRF, validação obrigatória, recuperação de formulário e bloqueio de GET nos controllers: OK.
+78 arquivos PHP: sintaxe válida.
+Separação: sem SQL nas views e sem acesso a $_POST nos DAOs.
+Limitação: a captura visual não foi concluída; Chromium encerrou ao iniciar com SIGSEGV.
